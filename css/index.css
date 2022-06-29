@@ -1,0 +1,235 @@
+/* 约束当屏幕大于750px时候,html字体大小不在变化 */
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 37.5px !important;
+  }
+}
+a {
+  text-decoration: none;
+}
+img {
+  border: 0;
+}
+body {
+  min-width: 320px;
+  max-width: 720px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.header {
+  height: 2.1333rem;
+  text-align: center;
+  line-height: 2.1333rem;
+  font-size: 0.9333rem;
+  color: #1C1C1C;
+  border-bottom: 1px solid #EAEAEA;
+  margin-bottom: 1.1733rem;
+}
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.nav .item {
+  display: flex;
+  flex-direction: column;
+  width: 33.3%;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  /* 选择前三个item */
+}
+.nav .item:nth-child(-n+3) {
+  margin-bottom: 1.6533rem;
+}
+.nav .item .icon {
+  width: 3.7067rem;
+  height: 3.7067rem;
+}
+.nav .item .item-content {
+  margin-top: 0.4267rem;
+  font-style: Microsoft YaHei;
+  font-size: 0.6667rem;
+  color: #707070;
+}
+.ad {
+  height: 4.0533rem;
+  margin-top: 1.6rem;
+  margin-left: 0.48rem;
+}
+.ad .ad-img {
+  width: 19.2533rem;
+  height: 4.0533rem;
+}
+.el-borderBottom {
+  height: 0.2667rem;
+  margin-top: 1.1467rem;
+  background-color: #F2F4F7;
+}
+.content {
+  padding: 1.0667rem 0.5867rem;
+}
+.content .content-hd {
+  display: flex;
+  justify-content: space-between;
+  height: 1.0133rem;
+  line-height: 1.0133rem;
+}
+.content .content-hd img {
+  width: 1.0133rem;
+  height: 1.0133rem;
+}
+.content .content-hd h2 {
+  flex: 1;
+  margin: 0;
+  margin-left: 0.48rem;
+  color: #333333;
+  font-size: 0.7467rem;
+}
+.content .content-hd .more {
+  color: #999999;
+  font-size: 0.5867rem;
+  text-decoration: none;
+}
+.content .guide {
+  margin-top: 0.9067rem;
+}
+.content .guide .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.content .guide .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  transition: 300ms;
+  transform: scale(0.8);
+  opacity: 0.4;
+}
+.content .guide .swiper-slide a {
+  width: 9.013333rem;
+  height: 10.0267rem;
+}
+.content .guide .swiper-slide a img {
+  width: 9.013333rem;
+  height: 10.0267rem;
+}
+.content .guide .swiper-slide-active,
+.content .guide .swiper-slide-duplicate-active {
+  transform: scale(1);
+  opacity: 1;
+  z-index: 999;
+}
+.content .guide h3 {
+  text-align: center;
+  margin-top: 0.64rem;
+  margin-bottom: 0.7467rem;
+  color: #333333;
+  font-size: 0.6667rem;
+}
+.study {
+  margin-top: 1.0133rem;
+  width: 100%;
+  height: 13.3333rem;
+}
+.study .swiper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.study .swiper-slide {
+  width: 7.2533rem;
+  height: 9.0667rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.study .swiper-slide a {
+  width: 100%;
+  height: 100%;
+}
+.study .swiper-slide a img {
+  width: 7.2533rem;
+  height: 4.56rem;
+}
+.study .swiper-slide a p {
+  max-width: 7.2533rem;
+  text-align: left;
+  font-size: 0.8rem;
+  color: #393d46;
+  margin-left: 0.4533rem;
+}
+.study .swiper-slide a .learn {
+  display: block;
+  text-align: left;
+  color: #999999;
+  font-size: 0.6933rem;
+  font-family: Arial;
+  margin-left: 0.5333rem;
+  margin-top: 0.72rem;
+}
+.study .swiper-slide a .learn .number {
+  color: #FF4400;
+}
+.study .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.footer {
+  display: flex;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2.9333rem;
+  margin-top: 0.7467rem;
+  border-top: 1px solid #E2E2E2;
+  background-color: #fff;
+  z-index: 9999;
+}
+.footer .item {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer .item img {
+  width: 1.04rem;
+  height: 1.0933rem;
+}
+.footer .item span {
+  margin-top: 0.2933rem;
+  color: #666666;
+  font-size: 0.5867rem;
+}
